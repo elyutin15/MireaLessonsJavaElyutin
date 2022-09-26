@@ -1,10 +1,6 @@
-package zadanie2;
+package Task1;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-public class Main {
+public class HarmonicSeries {
     public static void main(String[] args) {
         double sum = 0;
         for (int i = 1; i <= 10; ++i) {
