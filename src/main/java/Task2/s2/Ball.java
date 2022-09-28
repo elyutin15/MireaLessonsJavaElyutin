@@ -1,15 +1,17 @@
-package Task2;
+package Task2.s2;
 
-public class Point {
+public class Ball {
     private double x = 0;
     private double y = 0;
 
-    public Point(double x, double y) {
+    public Ball(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public Point() {}
+    public Ball() {
+
+    }
 
     public double getX() {
         return x;
@@ -27,9 +29,18 @@ public class Point {
         this.y = y;
     }
 
+    public void setXY(double x, double y) {
+        setX(x);
+        setY(y);
+    }
+
+    public void move(double xDisp, double yDisp) {
+        setXY(getX() + xDisp, getY() + yDisp);
+    }
+
     @Override
     public String toString() {
-        return "Point{" +
+        return "Ball{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

@@ -1,4 +1,4 @@
-package Task2;
+package Task2.s1;
 
 public class AuthorTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Task2;
+package Task2.s2;
 
 public class BallTest {
     public static void main(String[] args) {

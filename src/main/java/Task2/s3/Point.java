@@ -1,17 +1,15 @@
-package Task2;
+package Task2.s3;
 
-public class Ball {
+public class Point {
     private double x = 0;
     private double y = 0;
 
-    public Ball(double x, double y) {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public Ball() {
-
-    }
+    public Point() {}
 
     public double getX() {
         return x;
@@ -29,18 +27,22 @@ public class Ball {
         this.y = y;
     }
 
-    public void setXY(double x, double y) {
-        setX(x);
-        setY(y);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Point point = (Point) o;
+        return Double.compare(point.x, x) == 0 && Double.compare(point.y, y) == 0;
     }
 
-    public void move(double xDisp, double yDisp) {
-        setXY(getX() + xDisp, getY() + yDisp);
-    }
 
     @Override
     public String toString() {
-        return "Ball{" +
+        return "Point{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

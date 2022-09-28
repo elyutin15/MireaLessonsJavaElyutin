@@ -1,4 +1,4 @@
-package Task2;
+package Task2.s3;
 
 public class Circle {
     private Point c;
@@ -17,12 +17,12 @@ public class Circle {
         return r;
     }
 
-    public void setR(double r) {
-        this.r = r;
-    }
-
     public void setC(Point c) {
         this.c = c;
+    }
+
+    public void setR(double r) {
+        this.r = r;
     }
 
     @Override
