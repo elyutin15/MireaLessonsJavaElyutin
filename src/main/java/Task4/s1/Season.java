@@ -12,8 +12,8 @@ public enum Season {
         this.averageTemperature = averageTemperature;
     }
 
-    public static String getDescription(Season season) {
-        if (season.equals(Season.SUMMER)) {
+    public String getDescription() {
+        if (this.equals(Season.SUMMER)) {
             return "Warm season";
         }
         return "Cold season";

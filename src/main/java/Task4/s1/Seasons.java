@@ -12,10 +12,10 @@ public class Seasons {
 
         System.out.println();
 
-        System.out.println(Season.getDescription(mySeason));
+        System.out.println(mySeason.getDescription());
 
         for (var i : Season.values()) {
-            System.out.println(i.averageTemperature + " " + i.name() + " " + Season.getDescription(i));
+            System.out.println(i.averageTemperature + " " + i.name() + " " + i.getDescription());
         }
     }
 
