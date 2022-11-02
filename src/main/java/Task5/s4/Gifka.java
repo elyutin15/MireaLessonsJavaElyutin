@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Gifka {
     static JFrame frame;
+    // C:\Users\Max\Desktop\step2.png
     public static void main(String args[]) throws IOException, InterruptedException {
         frame = new JFrame();
         frame.setTitle("gifka");
